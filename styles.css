@@ -5,6 +5,11 @@ body {
     margin: 0;
     padding: 0;
 }
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
 
 header {
     background-color: #4a90e2;
@@ -30,4 +35,43 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    margin: 0;
+    color: #4a90e2;
+}
+a:hover, button:hover {
+    background-color: #2980b9;
+    transition: background-color 0.3s ease;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
 }
